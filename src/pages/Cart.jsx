@@ -15,7 +15,10 @@ function Cart({ location, getLocation }) {
 
   const navigate = useNavigate();
 
-  const totalPrice = cartItem.reduce((total, item) => total + item.price, 0);
+  const totalPrice = cartItem.reduce(
+    (total, item) => total + item.price * item.quantity,
+    0
+  );
 
   return (
     <div className="mt-10 max-w-6xl mb-5 mx-auto px-4 md:px-0">

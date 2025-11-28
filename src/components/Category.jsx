@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { useData } from "../context/DataContext";
 
-function Category() {
+function  Category() {
   // const { categoryOnlyData } = useData();
   const navigate = useNavigate();
   const { data } = useData();

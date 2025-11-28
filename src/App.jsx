@@ -49,14 +49,14 @@ function App() {
     if (storedCart) {
       setCartItem(JSON.parse(storedCart));
     }
-  }, [setCartItem]);
+  }, []);
 
   /// save cart to local storage whenever it changes
   useEffect(
     function () {
       localStorage.setItem("cartItem", JSON.stringify(cartItem))
     },
-    [cartItem]
+    []
   );
 
   return (

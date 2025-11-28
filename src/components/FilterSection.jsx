@@ -14,7 +14,7 @@ function FilterSection({
   handleCategoryChange,
 }) {
   const { categoryOnlyData, brandOnlyData } = useData();
-  const [step, setStep] = useState(1);
+  // const [step, setStep] = useState(1);
 
   return (
     <div className="bg-gray-100 mt-10 p-4 rounded-md h-max hidden md:block">
